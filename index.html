@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="open">
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
+   
+    <section>
+        <div class="header">
+            <h2 class="logo">Your Logo</h2>
+            <i class="fa fa-bars x2" onclick="myToggle();"></i>
+            <ul>
+               <li><a href="#" class="active">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Our Work</a></li>
+               <li><a href="#">Portfolio</a></li>
+               <li><a href="#">Contact</a></li>
+               <i class="fa fa-times x2" onclick="myToggle();"></i>
+            </ul>
+        </div>
+        <div class="bannerText">
+           <h2>Think Creative</h2><br>
+           <h3>And Make Innovative Design</h3>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores iure placeat quidem facilis, nihil molestias eum vel, magnam, asperiores veritatis modi nulla ipsum qui. Illo eum cupiditate reiciendis hic at deleniti non consectetur, ipsa perferendis alias laboriosam deserunt error nostrum ea. Repellat, impedit quod. Tempora laborum ex cupiditate voluptatum molestias.</p>
+           <a href="#">Read More</a>
+        </div>
+        <img src="bulb.jpg" class="bulb" alt="Bulb">
+        <ul class="sci">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        <div class="element1"></div>
+        <div class="element2"></div>
+        <script>
+            let toggle = function() {
+               let ul = document.querySelector('ul');
+               ul.classList.toggle('active');
+            }
+            function myToggle() {
+                return toggle();
+            }
+        </script>
+   </section>
+</body>
+</html>
